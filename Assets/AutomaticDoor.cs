@@ -7,7 +7,7 @@ namespace BrunoGomez
         [Header("Door Settings")]
         public float interactionRange = 3.5f;
         public float openSpeed = 4.0f;
-        public Vector3 openOffset = new Vector3(1.2f, 0, 0);
+        public Vector3 openOffset = new Vector3(2.5f, 0, 0);
         public bool isVerticalDoor = false;
         
         [Header("Status")]
@@ -18,12 +18,17 @@ namespace BrunoGomez
         public Transform rightPanel;
         public Animator doorAnimator;
         
+        [Header("Audio Settings")]
+        public AudioClip openSound;
+        public AudioClip closeSound;
+        
         [Header("UI Settings")]
         public GameObject interactHint;
         
         private Vector3 leftClosedPos;
         private Vector3 rightClosedPos;
         private Transform playerTransform;
+        private AudioSource audioSource;
 
         void Start()
         {
@@ -67,6 +72,12 @@ namespace BrunoGomez
             SetupKinematic(this.transform);
             if (leftPanel != null) SetupKinematic(leftPanel);
             if (rightPanel != null) SetupKinematic(rightPanel);
+
+            // Audio Setup
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 1.0f; // 3D Sound
 
             if (interactHint != null) interactHint.SetActive(false);
         }
@@ -169,6 +180,19 @@ namespace BrunoGomez
             isOpen = open;
             Debug.Log($"[Door] {gameObject.name} state changed to: {(isOpen ? "OPEN" : "CLOSED")}");
 
+            // Set colliders to Trigger when open so the player can pass through
+            SetCollidersTrigger(isOpen);
+
+            // Play Sound
+            if (audioSource != null)
+            {
+                AudioClip clipToPlay = isOpen ? openSound : closeSound;
+                if (clipToPlay != null)
+                {
+                    audioSource.PlayOneShot(clipToPlay);
+                }
+            }
+
             if (doorAnimator != null)
             {
                 bool hasParam = false;
@@ -232,6 +256,26 @@ namespace BrunoGomez
         {
             Gizmos.color = isOpen ? Color.green : Color.yellow;
             Gizmos.DrawWireSphere(transform.position, interactionRange);
+        }
+
+        private void SetCollidersTrigger(bool isTrigger)
+        {
+            // Apply to panels and their children
+            if (leftPanel != null)
+            {
+                foreach (Collider c in leftPanel.GetComponentsInChildren<Collider>(true)) c.isTrigger = isTrigger;
+            }
+            if (rightPanel != null && rightPanel != leftPanel)
+            {
+                foreach (Collider c in rightPanel.GetComponentsInChildren<Collider>(true)) c.isTrigger = isTrigger;
+            }
+            // Also apply to the main object just in case
+            foreach (Collider c in GetComponentsInChildren<Collider>(true))
+            {
+                // We only do this if it's not a panel (to avoid double work)
+                // but setting isTrigger twice doesn't hurt.
+                c.isTrigger = isTrigger;
+            }
         }
     }
 }

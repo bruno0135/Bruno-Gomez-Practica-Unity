@@ -759,6 +759,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &17729193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
@@ -2764,6 +2767,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &42688978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 243ee49f20f63434c95b7cbe33beac48, type: 3}
@@ -3853,14 +3859,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7204de14f4a7ee40b9d5c82615f8d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
-  interactionRange: 3.5
+  interactionRange: 6
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: 10, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &65303537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4187,6 +4196,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &73574262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5309,6 +5321,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &96754774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6033,6 +6048,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &119731242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9911,6 +9929,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &197719162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10009,6 +10030,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &202564519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: fb7ea84b5181a43e5a7fbc8a83a564ab, type: 3}
@@ -10804,6 +10828,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &210342240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12574,6 +12601,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &248928591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: fb7ea84b5181a43e5a7fbc8a83a564ab, type: 3}
@@ -13638,6 +13668,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &267245063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 433728, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
@@ -15268,6 +15301,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &300891119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
@@ -16047,6 +16083,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &315781842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20462,6 +20501,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &388263911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -20910,6 +20952,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &401438625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 0fa0f7adcd5084445ad2d722cecf73f2, type: 3}
@@ -23145,6 +23190,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1 &458905242 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 132580, guid: 94aa6bb10a2084bbb842e5fe1b92578f, type: 3}
@@ -23170,6 +23218,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1 &460733111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 132586, guid: 94aa6bb10a2084bbb842e5fe1b92578f, type: 3}
@@ -23195,6 +23246,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1 &462424837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 971206ac62c364e8593d36595119270b, type: 3}
@@ -23220,6 +23274,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &463441704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438122, guid: 39278bd2764254e72a9fe96217e4395c, type: 3}
@@ -24974,6 +25031,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &496393411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: add2d9420be3544d89122cce02950ec8, type: 3}
@@ -26414,6 +26474,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &560434596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 7c640618751f24e19a758d31aaa0351b, type: 3}
@@ -27844,6 +27907,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &587560662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 491248, guid: 499859e5622b54c9ca6e44760a2fcde2, type: 3}
@@ -28103,6 +28169,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &593537446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28676,6 +28745,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &604425127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 2aad511a3bf674ee3a4d7577e87e930d, type: 3}
@@ -30838,6 +30910,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &639803424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 738b55f9d75654dd2a1bbbed9d6fea19, type: 3}
@@ -31432,6 +31507,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &651460475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 421674, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
@@ -31566,6 +31644,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &654263587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 485624, guid: 49c6cada7ed484c158ec10a1e2745a64, type: 3}
@@ -32042,6 +32123,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &665542779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493604, guid: 2504b53e39a2545538e6b5f5573f2bf3, type: 3}
@@ -37349,12 +37433,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 2
-  openOffset: {x: 2, y: 0, z: 0}
+  openOffset: {x: 0, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &757292144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -39232,6 +39319,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &784166588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 2aad511a3bf674ee3a4d7577e87e930d, type: 3}
@@ -39600,6 +39690,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &789204857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: fb7ea84b5181a43e5a7fbc8a83a564ab, type: 3}
@@ -40190,6 +40283,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &796117144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40644,6 +40740,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &801202652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -41060,6 +41159,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &811222340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 2aad511a3bf674ee3a4d7577e87e930d, type: 3}
@@ -43606,6 +43708,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &865245334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46144,6 +46249,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &907570427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 468502, guid: 3c2481cf5d79f4b829f77b002e8e5b9d, type: 3}
@@ -48811,6 +48919,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &958701580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493604, guid: 2504b53e39a2545538e6b5f5573f2bf3, type: 3}
@@ -50748,6 +50859,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &984448147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b436ae5c615194675b30036b30e568c3, type: 3}
@@ -51470,6 +51584,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &999146502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 9bbcc483cff204c6ca6b74652840294e, type: 3}
@@ -51823,6 +51940,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1015473401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54153,6 +54273,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1057828023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: ac93356612ce24c718977a61ed7246de, type: 3}
@@ -54648,6 +54771,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1065536895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55191,6 +55317,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1076319010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 971206ac62c364e8593d36595119270b, type: 3}
@@ -55221,6 +55350,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1078180047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: f934feb22fdce4763bd4158da7dd43ed, type: 3}
@@ -55324,6 +55456,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1080887595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
@@ -55348,12 +55483,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: 2, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1083662288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55548,6 +55686,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1086183624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
@@ -55781,6 +55922,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1088482077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 458352, guid: 40ced70de82ce4f0bbd865136b5c7fa3, type: 3}
@@ -55984,6 +56128,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1102602397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56378,6 +56525,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1109956312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57206,6 +57356,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1115588244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59048,6 +59201,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1148050192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
@@ -59881,6 +60037,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1159798312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61610,6 +61769,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1177816564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61781,6 +61943,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1187363652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
@@ -65996,6 +66161,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1262601100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67700,6 +67868,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1295453595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67901,6 +68072,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1309066947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68660,6 +68834,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1324380572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72950,6 +73127,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1421402465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73780,6 +73960,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1429051429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 5cc345f83c1c34ef0940b7b0d21cdba2, type: 3}
@@ -74324,6 +74507,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1444225153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74556,6 +74742,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1449065667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75277,14 +75466,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7204de14f4a7ee40b9d5c82615f8d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
-  interactionRange: 3.5
-  openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  interactionRange: 7
+  openSpeed: 4
+  openOffset: {x: -10, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  closeSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  interactHint: {fileID: 0}
 --- !u!1001 &1466931866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75946,6 +76138,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1483585530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
@@ -76958,6 +77153,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1503686806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 5cc345f83c1c34ef0940b7b0d21cdba2, type: 3}
@@ -80476,6 +80674,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1549454215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80880,6 +81081,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1552868204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 43cae7f98873e473d96789cc6276b26f, type: 3}
@@ -83081,6 +83285,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1581865786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83219,6 +83426,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1583531029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83643,6 +83853,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1592814460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83938,6 +84151,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1598081443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 9bbcc483cff204c6ca6b74652840294e, type: 3}
@@ -86530,6 +86746,14 @@ PrefabInstance:
       propertyPath: m_LightmapTilingOffset.z
       value: .516601562
       objectReference: {fileID: 0}
+    - target: {fileID: 8275736, guid: 4c66d33674b19490a84d460e3d492166, type: 3}
+      propertyPath: Priority
+      value: 159
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275736, guid: 4c66d33674b19490a84d460e3d492166, type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86540,6 +86764,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100002, guid: 4c66d33674b19490a84d460e3d492166, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2131985339}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4c66d33674b19490a84d460e3d492166, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2131985343}
   m_SourcePrefab: {fileID: 100100000, guid: 4c66d33674b19490a84d460e3d492166, type: 3}
 --- !u!1001 &1620092009
 PrefabInstance:
@@ -87504,6 +87731,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1643419146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 738b55f9d75654dd2a1bbbed9d6fea19, type: 3}
@@ -87607,6 +87837,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1648859406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -87637,6 +87870,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1654155439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88748,6 +88984,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1665985724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88851,6 +89090,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1 &1668795731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 971206ac62c364e8593d36595119270b, type: 3}
@@ -88876,6 +89118,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1669159093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91687,6 +91932,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1731187497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 445162, guid: 8bb10558cac674d6b80301b2a954ed67, type: 3}
@@ -92401,6 +92649,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1755733798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
@@ -94440,6 +94691,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1793482886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95932,13 +96186,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
-  openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openSpeed: 10
+  openOffset: {x: 30, y: 0, z: 0}
   isVerticalDoor: 0
-  isOpen: 0
+  isOpen: 1
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1825884315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97761,6 +98018,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1847005177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99898,6 +100158,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1887662082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100121,6 +100384,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1888607492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469722, guid: e3ed4d0b20e65464b91bb2c9ca32ba31, type: 3}
@@ -100989,6 +101255,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1900975511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 5cc345f83c1c34ef0940b7b0d21cdba2, type: 3}
@@ -101029,6 +101298,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1905025352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 01cc9322b0a464f5580c775f02bbaaab, type: 3}
@@ -102343,6 +102615,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1923876867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 440360, guid: d8b78681a0006415a824f4e6273244dd, type: 3}
@@ -103648,6 +103923,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &1952590462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 7c640618751f24e19a758d31aaa0351b, type: 3}
@@ -103757,6 +104035,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1954962877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105161,6 +105442,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1984654627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106012,6 +106296,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &1999216971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107925,6 +108212,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1 &2048218636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
@@ -107950,6 +108240,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &2048438269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108516,6 +108809,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &2064723409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: d9496913daf444c5c9205545c44d78c4, type: 3}
@@ -108644,6 +108940,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &2075163690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109502,10 +109801,13 @@ MonoBehaviour:
   openSpeed: 3
   openOffset: {x: 1.2, y: 0, z: 0}
   isVerticalDoor: 0
-  isOpen: 0
+  isOpen: 1
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &2091060388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109758,6 +110060,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &2100737186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
@@ -109930,6 +110235,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &2107079896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111309,6 +111617,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!1001 &2124646407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111423,12 +111734,112 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: -10, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
+--- !u!82 &2131985343
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131985335}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 188
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2132285316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112077,6 +112488,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  interactHint: {fileID: 0}
 --- !u!4 &2140061742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: fedf50d65fc79434b89f634a6cba8fb2, type: 3}
