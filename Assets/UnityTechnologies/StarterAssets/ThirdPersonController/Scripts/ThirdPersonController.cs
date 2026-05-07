@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+ using System.Collections.Generic;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -31,6 +32,21 @@ namespace StarterAssets
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
+        public UnityEngine.Audio.AudioMixerGroup FootstepMixerGroup;
+        private AudioSource _footstepAudioSource;
+
+        [Header("Surface Detection")]
+        [Tooltip("Define sounds for specific surface tags (e.g. Metal, Wood)")]
+        public List<SurfaceAudioData> SurfaceFootsteps = new List<SurfaceAudioData>();
+        [Tooltip("Max distance to detect the surface below the character")]
+        public float SurfaceRaycastDistance = 1.0f;
+
+        [System.Serializable]
+        public class SurfaceAudioData
+        {
+            public string surfaceTag;
+            public AudioClip[] footsteps;
+        }
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
@@ -146,6 +162,12 @@ namespace StarterAssets
 #endif
 
             AssignAnimationIDs();
+
+            // Setup AudioSource for footsteps to support Mixer
+            _footstepAudioSource = gameObject.AddComponent<AudioSource>();
+            _footstepAudioSource.outputAudioMixerGroup = FootstepMixerGroup;
+            _footstepAudioSource.spatialBlend = 1.0f; // 3D Sound
+            _footstepAudioSource.playOnAwake = false;
 
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
@@ -373,10 +395,36 @@ namespace StarterAssets
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                if (FootstepAudioClips.Length > 0)
+                AudioClip[] clipsToUse = FootstepAudioClips;
+
+                // --- SURFACE DETECTION ---
+                // We raycast down from the center of the controller
+                RaycastHit hit;
+                Vector3 rayStart = transform.position + _controller.center;
+                if (Physics.Raycast(rayStart, Vector3.down, out hit, SurfaceRaycastDistance + _controller.height/2f, GroundLayers, QueryTriggerInteraction.Ignore))
                 {
-                    var index = Random.Range(0, FootstepAudioClips.Length);
-                    AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                    string hitTag = hit.collider.tag;
+                    // Debug.Log($"[Footstep] Hit surface: {hitTag} on {hit.collider.name}");
+
+                    // Find if we have specific sounds for this tag
+                    foreach (var surfaceData in SurfaceFootsteps)
+                    {
+                        if (surfaceData.surfaceTag == hitTag && surfaceData.footsteps != null && surfaceData.footsteps.Length > 0)
+                        {
+                            clipsToUse = surfaceData.footsteps;
+                            break;
+                        }
+                    }
+                }
+
+                if (clipsToUse != null && clipsToUse.Length > 0)
+                {
+                    var index = Random.Range(0, clipsToUse.Length);
+                    if (_footstepAudioSource != null)
+                    {
+                        _footstepAudioSource.pitch = Random.Range(0.9f, 1.1f); // Un toc de varietat
+                        _footstepAudioSource.PlayOneShot(clipsToUse[index], FootstepAudioVolume);
+                    }
                 }
             }
         }

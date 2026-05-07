@@ -21,6 +21,7 @@ namespace BrunoGomez
         [Header("Audio Settings")]
         public AudioClip openSound;
         public AudioClip closeSound;
+        public UnityEngine.Audio.AudioMixerGroup mixerGroup;
         
         [Header("UI Settings")]
         public GameObject interactHint;
@@ -76,6 +77,7 @@ namespace BrunoGomez
             // Audio Setup
             audioSource = GetComponent<AudioSource>();
             if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.outputAudioMixerGroup = mixerGroup;
             audioSource.playOnAwake = false;
             audioSource.spatialBlend = 1.0f; // 3D Sound
 
