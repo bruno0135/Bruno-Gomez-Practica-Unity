@@ -761,6 +761,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &17729193 stripped
 Transform:
@@ -2769,6 +2770,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &42688978 stripped
 Transform:
@@ -3869,6 +3871,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &65303537
 PrefabInstance:
@@ -4198,6 +4201,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &73574262
 PrefabInstance:
@@ -5323,6 +5327,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &96754774
 PrefabInstance:
@@ -6050,6 +6055,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &119731242
 PrefabInstance:
@@ -9931,6 +9937,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &197719162
 PrefabInstance:
@@ -10032,6 +10039,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &202564519 stripped
 Transform:
@@ -10830,6 +10838,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &210342240
 PrefabInstance:
@@ -12603,6 +12612,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &248928591 stripped
 Transform:
@@ -13670,6 +13680,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &267245063 stripped
 Transform:
@@ -15303,6 +15314,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &300891119 stripped
 Transform:
@@ -16085,6 +16097,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &315781842
 PrefabInstance:
@@ -20503,6 +20516,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &388263911 stripped
 Transform:
@@ -20954,6 +20968,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &401438625 stripped
 Transform:
@@ -21530,6 +21545,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
   m_PrefabInstance: {fileID: 36488747}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &427398067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118364, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &427398070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427398067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!4 &429402538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 402942, guid: 6258a9c362f6f45bea8423913f90a4bb, type: 3}
@@ -23192,6 +23241,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1 &458905242 stripped
 GameObject:
@@ -23220,6 +23270,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1 &460733111 stripped
 GameObject:
@@ -23248,6 +23299,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1 &462424837 stripped
 GameObject:
@@ -23276,6 +23328,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &463441704 stripped
 Transform:
@@ -25033,6 +25086,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &496393411 stripped
 Transform:
@@ -26476,6 +26530,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &560434596 stripped
 Transform:
@@ -27417,6 +27472,40 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1886946657}
   m_SourcePrefab: {fileID: 100100000, guid: 94aa6bb10a2084bbb842e5fe1b92578f, type: 3}
+--- !u!1 &572979623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: a27242662722e417d9fe08ebbf85eb51, type: 3}
+  m_PrefabInstance: {fileID: 1159798312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &572979626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572979623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &573164674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27909,6 +27998,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &587560662 stripped
 Transform:
@@ -28171,6 +28261,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &593537446
 PrefabInstance:
@@ -28747,6 +28838,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &604425127 stripped
 Transform:
@@ -28763,6 +28855,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 6303ec70701ed4d31806e2ce8a7af08c, type: 3}
   m_PrefabInstance: {fileID: 850305459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &606126761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+  m_PrefabInstance: {fileID: 638980388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &606126764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606126761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &606135587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30810,7 +30936,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 606126764}
   m_SourcePrefab: {fileID: 100100000, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
 --- !u!1001 &638999093
 PrefabInstance:
@@ -30912,6 +31041,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &639803424 stripped
 Transform:
@@ -31501,7 +31631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: 30, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
@@ -31509,6 +31639,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &651460475 stripped
 Transform:
@@ -31646,6 +31777,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &654263587 stripped
 Transform:
@@ -32125,6 +32257,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &665542779 stripped
 Transform:
@@ -35033,6 +35166,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc345f83c1c34ef0940b7b0d21cdba2, type: 3}
+--- !u!1 &709043478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 7c640618751f24e19a758d31aaa0351b, type: 3}
+  m_PrefabInstance: {fileID: 1970545019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709043481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709043478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!850595691 &713168539
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -37441,6 +37608,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &757292144 stripped
 Transform:
@@ -39321,6 +39489,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &784166588 stripped
 Transform:
@@ -39692,6 +39861,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &789204857 stripped
 Transform:
@@ -40285,6 +40455,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &796117144
 PrefabInstance:
@@ -40703,7 +40874,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 118370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 800286971}
+    - targetCorrespondingSourceObject: {fileID: 118368, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907868230}
+    - targetCorrespondingSourceObject: {fileID: 118366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212679553}
+    - targetCorrespondingSourceObject: {fileID: 118364, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 427398070}
   m_SourcePrefab: {fileID: 100100000, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
 --- !u!4 &799182402 stripped
 Transform:
@@ -40715,6 +40898,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: a27242662722e417d9fe08ebbf85eb51, type: 3}
   m_PrefabInstance: {fileID: 1159798312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &800286968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &800286971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800286968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &800851673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 166348, guid: 8bb10558cac674d6b80301b2a954ed67, type: 3}
@@ -40742,6 +40959,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &801202652 stripped
 Transform:
@@ -41161,6 +41379,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &811222340 stripped
 Transform:
@@ -43710,6 +43929,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &865245334
 PrefabInstance:
@@ -46251,6 +46471,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &907570427 stripped
 Transform:
@@ -48921,6 +49142,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &958701580 stripped
 Transform:
@@ -50861,6 +51083,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &984448147 stripped
 Transform:
@@ -51586,6 +51809,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &999146502 stripped
 Transform:
@@ -51942,6 +52166,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1015473401
 PrefabInstance:
@@ -54275,6 +54500,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1057828023 stripped
 Transform:
@@ -54773,6 +54999,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1065536895
 PrefabInstance:
@@ -55319,6 +55546,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1076319010 stripped
 Transform:
@@ -55352,6 +55580,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1078180047 stripped
 Transform:
@@ -55458,6 +55687,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1080887595 stripped
 Transform:
@@ -55481,9 +55711,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7204de14f4a7ee40b9d5c82615f8d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
-  interactionRange: 3.5
+  interactionRange: 6
   openSpeed: 3
-  openOffset: {x: 2, y: 0, z: 0}
+  openOffset: {x: 30, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
@@ -55491,6 +55721,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1083662288
 PrefabInstance:
@@ -55688,6 +55919,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1086183624 stripped
 Transform:
@@ -55924,6 +56156,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1088482077 stripped
 Transform:
@@ -56130,6 +56363,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1102602397
 PrefabInstance:
@@ -56527,6 +56761,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1109956312
 PrefabInstance:
@@ -57358,6 +57593,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1115588244
 PrefabInstance:
@@ -59203,6 +59439,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1148050192 stripped
 Transform:
@@ -60039,6 +60276,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1159798312
 PrefabInstance:
@@ -60299,7 +60537,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100014, guid: a27242662722e417d9fe08ebbf85eb51, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 572979626}
   m_SourcePrefab: {fileID: 100100000, guid: a27242662722e417d9fe08ebbf85eb51, type: 3}
 --- !u!1001 &1160341118
 PrefabInstance:
@@ -61771,6 +62012,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1177816564
 PrefabInstance:
@@ -61945,6 +62187,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1187363652 stripped
 Transform:
@@ -63265,6 +63508,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: add2d9420be3544d89122cce02950ec8, type: 3}
   m_PrefabInstance: {fileID: 284107536}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1212679550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1212679553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212679550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1214460884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66163,6 +66440,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1262601100
 PrefabInstance:
@@ -67870,6 +68148,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1295453595
 PrefabInstance:
@@ -68074,6 +68353,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1309066947
 PrefabInstance:
@@ -68836,6 +69116,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1324380572
 PrefabInstance:
@@ -73129,6 +73410,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1421402465
 PrefabInstance:
@@ -73962,6 +74244,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1429051429 stripped
 Transform:
@@ -74501,7 +74784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 2
-  openOffset: {x: 2, y: 0, z: 0}
+  openOffset: {x: 30, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
@@ -74509,6 +74792,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1444225153
 PrefabInstance:
@@ -74744,6 +75028,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1449065667
 PrefabInstance:
@@ -75476,6 +75761,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
   closeSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1466931866
 PrefabInstance:
@@ -76140,6 +76426,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1483585530 stripped
 Transform:
@@ -77155,6 +77442,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1503686806 stripped
 Transform:
@@ -80676,6 +80964,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1549454215
 PrefabInstance:
@@ -81083,6 +81372,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1552868204 stripped
 Transform:
@@ -83287,6 +83577,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1581865786
 PrefabInstance:
@@ -83420,7 +83711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: -10, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
@@ -83428,6 +83719,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1583531029
 PrefabInstance:
@@ -83855,6 +84147,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1592814460
 PrefabInstance:
@@ -84153,6 +84446,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1598081443 stripped
 Transform:
@@ -87733,6 +88027,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1643419146 stripped
 Transform:
@@ -87839,6 +88134,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1648859406 stripped
 Transform:
@@ -87872,6 +88168,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1654155439
 PrefabInstance:
@@ -88986,6 +89283,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1665985724
 PrefabInstance:
@@ -89092,6 +89390,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1 &1668795731 stripped
 GameObject:
@@ -89120,6 +89419,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1669159093
 PrefabInstance:
@@ -91934,6 +92234,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1731187497 stripped
 Transform:
@@ -92651,6 +92952,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1755733798 stripped
 Transform:
@@ -94693,6 +94995,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1793482886
 PrefabInstance:
@@ -96185,16 +96488,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7204de14f4a7ee40b9d5c82615f8d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
-  interactionRange: 3.5
+  interactionRange: 6
   openSpeed: 10
   openOffset: {x: 30, y: 0, z: 0}
   isVerticalDoor: 0
-  isOpen: 1
+  isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1825884315
 PrefabInstance:
@@ -97642,6 +97946,14 @@ PrefabInstance:
       value: 0.3843
       objectReference: {fileID: 0}
     - target: {fileID: 19819170, guid: d8b78681a0006415a824f4e6273244dd, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19819170, guid: d8b78681a0006415a824f4e6273244dd, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19819170, guid: d8b78681a0006415a824f4e6273244dd, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.m_NumColorKeys
       value: 2
       objectReference: {fileID: 0}
@@ -98020,6 +98332,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1847005177
 PrefabInstance:
@@ -100160,6 +100473,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1887662082
 PrefabInstance:
@@ -100386,6 +100700,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1888607492 stripped
 Transform:
@@ -101257,6 +101572,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1900975511 stripped
 Transform:
@@ -101300,6 +101616,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1905025352 stripped
 Transform:
@@ -101684,6 +102001,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
+--- !u!1 &1907868227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118368, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1907868230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907868227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!4 &1908462287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b436ae5c615194675b30036b30e568c3, type: 3}
@@ -102617,6 +102968,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1923876867 stripped
 Transform:
@@ -103925,6 +104277,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &1952590462 stripped
 Transform:
@@ -104037,6 +104390,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1954962877
 PrefabInstance:
@@ -104961,7 +105315,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 7c640618751f24e19a758d31aaa0351b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 709043481}
   m_SourcePrefab: {fileID: 100100000, guid: 7c640618751f24e19a758d31aaa0351b, type: 3}
 --- !u!4 &1971176337 stripped
 Transform:
@@ -105444,6 +105801,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1984654627
 PrefabInstance:
@@ -106298,6 +106656,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &1999216971
 PrefabInstance:
@@ -108206,7 +108565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 2
-  openOffset: {x: 2, y: 0, z: 0}
+  openOffset: {x: -10, y: 0, z: 0}
   isVerticalDoor: 0
   isOpen: 0
   leftPanel: {fileID: 0}
@@ -108214,6 +108573,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1 &2048218636 stripped
 GameObject:
@@ -108242,6 +108602,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &2048438269
 PrefabInstance:
@@ -108811,6 +109172,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &2064723409 stripped
 Transform:
@@ -108942,6 +109304,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &2075163690
 PrefabInstance:
@@ -109799,14 +110162,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrunoGomez.AutomaticDoor
   interactionRange: 3.5
   openSpeed: 3
-  openOffset: {x: 1.2, y: 0, z: 0}
+  openOffset: {x: -10, y: 0, z: 0}
   isVerticalDoor: 0
-  isOpen: 1
+  isOpen: 0
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &2091060388
 PrefabInstance:
@@ -110062,6 +110426,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &2100737186 stripped
 Transform:
@@ -110237,6 +110602,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &2107079896
 PrefabInstance:
@@ -111619,6 +111985,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!1001 &2124646407
 PrefabInstance:
@@ -111742,6 +112109,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!82 &2131985343
 AudioSource:
@@ -112490,6 +112858,7 @@ MonoBehaviour:
   doorAnimator: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
+  mixerGroup: {fileID: 0}
   interactHint: {fileID: 0}
 --- !u!4 &2140061742 stripped
 Transform:
