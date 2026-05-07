@@ -21,6 +21,26 @@ namespace BrunoGomez
         public float cameraDistance = 3.0f;
         public Vector3 cameraOffset = new Vector3(0, 1.5f, 0);
 
+        [Header("Footstep Audio")]
+        [Tooltip("Array of footstep audio clips (Player_Footstep_01 to _10)")]
+        public AudioClip[] footstepClips;
+        
+        [Tooltip("Sound played when landing after a jump or fall")]
+        public AudioClip landingClip;
+        
+        [Tooltip("Volume for footstep sounds")]
+        [Range(0f, 1f)]
+        public float footstepVolume = 0.5f;
+        
+        [Tooltip("Time interval between footsteps when walking")]
+        public float walkStepInterval = 0.5f;
+        
+        [Tooltip("Time interval between footsteps when running")]
+        public float runStepInterval = 0.3f;
+        
+        [Tooltip("Optional Audio Mixer Group for footsteps")]
+        public UnityEngine.Audio.AudioMixerGroup footstepMixerGroup;
+
         private CharacterController controller;
         private Animator animator;
         private Vector3 velocity;
@@ -34,6 +54,11 @@ namespace BrunoGomez
         private int animIDJump;
         private int animIDFreeFall;
         private int animIDMotionSpeed;
+
+        // Footstep audio
+        private AudioSource footstepAudioSource;
+        private float footstepTimer;
+        private int lastFootstepIndex = -1;
 
         void Start()
         {
@@ -52,6 +77,18 @@ namespace BrunoGomez
             animIDJump = Animator.StringToHash("Jump");
             animIDFreeFall = Animator.StringToHash("FreeFall");
             animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+
+            // Setup footstep AudioSource
+            footstepAudioSource = gameObject.AddComponent<AudioSource>();
+            footstepAudioSource.playOnAwake = false;
+            footstepAudioSource.spatialBlend = 1.0f; // 3D sound
+            footstepAudioSource.minDistance = 1f;
+            footstepAudioSource.maxDistance = 15f;
+            footstepAudioSource.volume = footstepVolume;
+            if (footstepMixerGroup != null)
+            {
+                footstepAudioSource.outputAudioMixerGroup = footstepMixerGroup;
+            }
 
             // Lock cursor
             Cursor.lockState = CursorLockMode.Locked;
@@ -76,11 +113,20 @@ namespace BrunoGomez
                 velocity.y = -2f;
             }
 
-            // Reset Jump parameter when landing
-            if (isGrounded && !wasGrounded && animator != null)
+            // Reset Jump parameter when landing + play landing sound
+            if (isGrounded && !wasGrounded)
             {
-                animator.SetBool(animIDJump, false);
-                animator.SetBool(animIDFreeFall, false);
+                if (animator != null)
+                {
+                    animator.SetBool(animIDJump, false);
+                    animator.SetBool(animIDFreeFall, false);
+                }
+                
+                // Play landing sound
+                if (landingClip != null && footstepAudioSource != null)
+                {
+                    footstepAudioSource.PlayOneShot(landingClip, footstepVolume);
+                }
             }
 
             // --- INPUT HANDLING ---
@@ -103,8 +149,9 @@ namespace BrunoGomez
 
             Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
             float currentSpeed = isRunning ? runSpeed : walkSpeed;
+            bool isMoving = direction.magnitude >= 0.1f;
 
-            if (direction.magnitude >= 0.1f)
+            if (isMoving)
             {
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref rotationSpeed, 0.1f);
@@ -119,6 +166,19 @@ namespace BrunoGomez
                     animator.SetFloat(animIDSpeed, speedValue, 0.1f, Time.deltaTime);
                     animator.SetFloat(animIDMotionSpeed, 1.0f);
                 }
+                
+                // --- FOOTSTEP AUDIO ---
+                if (isGrounded)
+                {
+                    float stepInterval = isRunning ? runStepInterval : walkStepInterval;
+                    footstepTimer -= Time.deltaTime;
+                    
+                    if (footstepTimer <= 0f)
+                    {
+                        PlayFootstep();
+                        footstepTimer = stepInterval;
+                    }
+                }
             }
             else
             {
@@ -127,6 +187,9 @@ namespace BrunoGomez
                     animator.SetFloat(animIDSpeed, 0, 0.1f, Time.deltaTime);
                     animator.SetFloat(animIDMotionSpeed, 1.0f);
                 }
+                
+                // Reset footstep timer when not moving
+                footstepTimer = 0f;
             }
 
             // Jump
@@ -145,6 +208,35 @@ namespace BrunoGomez
             {
                 animator.SetBool(animIDGrounded, isGrounded);
                 if (!isGrounded && velocity.y < -1f) animator.SetBool(animIDFreeFall, true);
+            }
+        }
+
+        /// <summary>
+        /// Plays a random footstep sound, avoiding repeating the same one twice in a row.
+        /// </summary>
+        private void PlayFootstep()
+        {
+            if (footstepClips == null || footstepClips.Length == 0 || footstepAudioSource == null) return;
+            
+            // Pick a random clip, avoiding the last one played
+            int index;
+            if (footstepClips.Length > 1)
+            {
+                do
+                {
+                    index = Random.Range(0, footstepClips.Length);
+                } while (index == lastFootstepIndex);
+            }
+            else
+            {
+                index = 0;
+            }
+            
+            lastFootstepIndex = index;
+            
+            if (footstepClips[index] != null)
+            {
+                footstepAudioSource.PlayOneShot(footstepClips[index], footstepVolume);
             }
         }
 
