@@ -44580,7 +44580,7 @@ MonoBehaviour:
   cameraDistance: 3
   cameraOffset: {x: 0, y: 1.5, z: 0}
   footstepClips: []
-  landingClip: {fileID: 0}
+  landingClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
   footstepVolume: 0.5
   walkStepInterval: 0.5
   runStepInterval: 0.3
