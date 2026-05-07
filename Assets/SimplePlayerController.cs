@@ -41,6 +41,10 @@ namespace BrunoGomez
         [Tooltip("Optional Audio Mixer Group for footsteps")]
         public UnityEngine.Audio.AudioMixerGroup footstepMixerGroup;
 
+        [Header("Grounded Settings")]
+        [Tooltip("Layers to consider as ground for footsteps and jumping")]
+        public LayerMask groundLayers = -1;
+
         private CharacterController controller;
         private Animator animator;
         private Vector3 velocity;
@@ -106,7 +110,8 @@ namespace BrunoGomez
             // Small offset to the sphere to make it more reliable
             Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
             bool wasGrounded = isGrounded;
-            isGrounded = Physics.CheckSphere(spherePosition, 0.2f, -1, QueryTriggerInteraction.Ignore);
+            // Use groundLayers to avoid hitting the player's own collider
+            isGrounded = Physics.CheckSphere(spherePosition, 0.2f, groundLayers, QueryTriggerInteraction.Ignore);
 
             if (isGrounded && velocity.y < 0)
             {
@@ -216,7 +221,13 @@ namespace BrunoGomez
         /// </summary>
         private void PlayFootstep()
         {
-            if (footstepClips == null || footstepClips.Length == 0 || footstepAudioSource == null) return;
+            if (footstepClips == null || footstepClips.Length == 0)
+            {
+                Debug.LogWarning($"[SimplePlayerController] No footstep clips assigned to {gameObject.name}. Please assign them in the inspector.");
+                return;
+            }
+            
+            if (footstepAudioSource == null) return;
             
             // Pick a random clip, avoiding the last one played
             int index;
@@ -236,7 +247,9 @@ namespace BrunoGomez
             
             if (footstepClips[index] != null)
             {
-                footstepAudioSource.PlayOneShot(footstepClips[index], footstepVolume);
+                // Source volume is already set to footstepVolume in Start(), 
+                // so we use 1.0f here to play at that volume.
+                footstepAudioSource.PlayOneShot(footstepClips[index], 1f);
             }
         }
 
