@@ -100083,9 +100083,9 @@ MonoBehaviour:
   leftPanel: {fileID: 0}
   rightPanel: {fileID: 0}
   doorAnimator: {fileID: 0}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  mixerGroup: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  closeSound: {fileID: 8300000, guid: 33271de20f9ff44cc9e6fa1cb2005d6f, type: 3}
+  mixerGroup: {fileID: -64604631012921872, guid: 9ecfa6bd77461a34cad40befce184a50, type: 2}
   interactHint: {fileID: 0}
 --- !u!1001 &1825884315
 PrefabInstance:
