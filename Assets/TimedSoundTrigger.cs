@@ -7,16 +7,25 @@ namespace BrunoGomez
     {
         [Header("Configuración de Tiempo")]
         [Tooltip("Segundos que deben pasar antes de sonar")]
-        public float delay = 20f;
+        public float delay = 60f;
         
-        [Tooltip("¿Debe sonar cada 20 segundos (bucle) o solo una vez?")]
-        public bool repeatEveryInterval = false;
+        [Tooltip("¿Debe sonar cada 60 segundos (bucle) o solo una vez?")]
+        public bool repeatEveryInterval = true;
 
         [Header("Audio")]
         public AudioClip audioClip;
         
         [Range(0f, 1f)]
-        public float volume = 0.3f;
+        public float volume = 0.05f;
+
+        [Header("3D Settings")]
+        [Range(0f, 1f)]
+        public float spatialBlend = 1.0f;
+        public float minDistance = 1f;
+        public float maxDistance = 20f;
+
+        [Header("Output")]
+        public UnityEngine.Audio.AudioMixerGroup mixerGroup;
 
         private AudioSource audioSource;
         private float timer;
@@ -28,8 +37,17 @@ namespace BrunoGomez
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = audioClip;
             audioSource.playOnAwake = false;
-            audioSource.spatialBlend = 0f; // Modo 2D (se oye en todo el nivel)
-            audioSource.volume = volume;
+            audioSource.loop = false;
+            audioSource.spatialBlend = spatialBlend;
+            audioSource.minDistance = minDistance;
+            audioSource.maxDistance = maxDistance;
+            audioSource.rolloffMode = AudioRolloffMode.Logarithmic;
+            
+            if (mixerGroup != null)
+                audioSource.outputAudioMixerGroup = mixerGroup;
+            
+            // Seteamos el volumen del componente a 1 para que el volumen del script sea el valor real
+            audioSource.volume = 1f; 
             
             timer = delay;
         }

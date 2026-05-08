@@ -22,8 +22,18 @@ namespace BrunoGomez
         public Vector3 cameraOffset = new Vector3(0, 1.5f, 0);
 
         [Header("Footstep Audio")]
-        [Tooltip("Array of footstep audio clips (Player_Footstep_01 to _10)")]
-        public AudioClip[] footstepClips;
+        [Tooltip("Default footstep clips if no surface is detected")]
+        public AudioClip[] defaultFootsteps;
+        
+        [System.Serializable]
+        public struct SurfaceFootsteps
+        {
+            public string surfaceTag;
+            public AudioClip[] clips;
+        }
+        
+        [Tooltip("Specific footsteps for different surfaces (detected via Tag)")]
+        public SurfaceFootsteps[] surfaceFootsteps;
         
         [Tooltip("Sound played when landing after a jump or fall")]
         public AudioClip landingClip;
@@ -217,25 +227,40 @@ namespace BrunoGomez
         }
 
         /// <summary>
-        /// Plays a random footstep sound, avoiding repeating the same one twice in a row.
+        /// Plays a footstep sound based on the surface below the player.
         /// </summary>
         private void PlayFootstep()
         {
-            if (footstepClips == null || footstepClips.Length == 0)
+            if (footstepAudioSource == null) return;
+            
+            // Detect surface
+            AudioClip[] clipsToUse = defaultFootsteps;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, out hit, 0.5f, groundLayers, QueryTriggerInteraction.Ignore))
             {
-                Debug.LogWarning($"[SimplePlayerController] No footstep clips assigned to {gameObject.name}. Please assign them in the inspector.");
+                foreach (var surface in surfaceFootsteps)
+                {
+                    if (hit.collider.CompareTag(surface.surfaceTag))
+                    {
+                        clipsToUse = surface.clips;
+                        break;
+                    }
+                }
+            }
+
+            if (clipsToUse == null || clipsToUse.Length == 0)
+            {
+                Debug.LogWarning($"[SimplePlayerController] No clips found for surface at {gameObject.name}");
                 return;
             }
             
-            if (footstepAudioSource == null) return;
-            
             // Pick a random clip, avoiding the last one played
             int index;
-            if (footstepClips.Length > 1)
+            if (clipsToUse.Length > 1)
             {
                 do
                 {
-                    index = Random.Range(0, footstepClips.Length);
+                    index = Random.Range(0, clipsToUse.Length);
                 } while (index == lastFootstepIndex);
             }
             else
@@ -245,11 +270,9 @@ namespace BrunoGomez
             
             lastFootstepIndex = index;
             
-            if (footstepClips[index] != null)
+            if (clipsToUse[index] != null)
             {
-                // Source volume is already set to footstepVolume in Start(), 
-                // so we use 1.0f here to play at that volume.
-                footstepAudioSource.PlayOneShot(footstepClips[index], 1f);
+                footstepAudioSource.PlayOneShot(clipsToUse[index], 1f);
             }
         }
 
