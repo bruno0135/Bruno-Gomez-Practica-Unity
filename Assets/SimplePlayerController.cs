@@ -303,6 +303,16 @@ namespace BrunoGomez
             cameraTransform.rotation = rotation;
         }
         
+        private void OnFootstep(AnimationEvent animationEvent)
+        {
+            // Silences the missing receiver error from StarterAssets animations
+        }
+
+        private void OnLand(AnimationEvent animationEvent)
+        {
+            // Silences the missing receiver error from StarterAssets animations
+        }
+
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
