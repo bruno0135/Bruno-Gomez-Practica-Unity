@@ -21,6 +21,8 @@ namespace BrunoGomez
 
         public static void Setup()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) return;
+
             // Try to find the player
             GameObject player = GameObject.Find("sky_protectiv_suit_rig_UNITY");
             if (player == null) player = GameObject.FindWithTag("Player");
